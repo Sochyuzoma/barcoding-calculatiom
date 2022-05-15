@@ -1,0 +1,34 @@
+import pandas as pd
+x = pd.read_csv(r'C:\Users\SOCHY\Documents\stocck_build.csv')
+print(x)
+packs =(x['Sep-21'])
+print(packs)
+print("Sum packs: ", packs.sum())
+print("Number of days to label total packs by 5 people:  ", packs.sum()/(5*1500))
+print("Monthly budget for Septemeber:  ",packs.sum()/(5*1500)*(2500*5))
+
+
+packs =(x['Nov-21'])
+print(packs)
+print("Sum packs: ", packs.sum())
+print("Mean packs: ", packs.mean())
+print("Number of days to label total packs by 5 people: ", packs.sum()/(5*1500))
+print("Monthly budget for November:  ",packs.sum()/(5*1500)*(2500*5))
+
+
+packs = (x['Oct-21'])
+print(packs)
+print("Sum packs: ", packs.sum())
+print("Mean packs: ", packs.mean())
+print("Number of days to label total packs by 5 people: ", packs.sum()/(5*1500))
+print("Monthly budget for October:  ",packs.sum()/(5*1500)*(2500*5))
+
+packs = (x['Dec-21'])
+print(packs)
+print("Sum packs: ", packs.sum())
+print("Mean packs: ", packs.mean())
+print("Number of days to label total packs by 5 people: ", packs.sum()/(5*1500))
+print("Monthly budget for December:  ",packs.sum()/(5*1500)*(2500*5))
+
+
+
